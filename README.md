@@ -1,2 +1,2 @@
-# sos-toolbox
-Toolbox for Summer of Science: EXPTECH
+# Summer of Science: EXPTECH
+## Laser Toolbox
