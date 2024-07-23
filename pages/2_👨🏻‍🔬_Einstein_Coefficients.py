@@ -41,7 +41,7 @@ col1, col2 = st.columns(2)
 with col1:
     with st.container(border=True):
         st.header('Inputs')
-        st.number_input('A (s$^{-1}$)', min_value=0.01, key='ab-A')
+        st.number_input('A$_{21}$ (s$^{-1}$)', min_value=0.01, key='ab-A')
         st.number_input(r'$B_{12}W = B_{21}W$ (s$^{-1}$)', min_value=0., key='ab-BW')
         st.number_input('Wavelength (nm)', min_value=10, max_value=10000, key='ab-wavelength')
         st.number_input('Temperature (K)', min_value=4, key='ab-T')
@@ -52,6 +52,7 @@ with col1:
             st.session_state['ab-N'] = np.exp(h*c/st.session_state['ab-wavelength']/(k*st.session_state['ab-T']))
             
 with col2:
+    st.image('images/A&B.png', width=350)
     with st.container(border= True):
         st.header('Steady State')
         res, N = solve_model(st.session_state)
