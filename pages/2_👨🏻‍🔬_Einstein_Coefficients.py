@@ -11,6 +11,7 @@ st.set_page_config(
         page_icon="☀️")
 st.title("Einstein's A & B Coefficients")
 
+
 # Constants
 h = 4.135667696e-15     # Planck's constant (eV/Hz)
 h_Si = 6.62607015e-34     # Planck's constant (eV/Hz)
@@ -53,6 +54,10 @@ with col1:
             
 with col2:
     st.image('images/A&B.png', width=350)
+    st.latex(r"""\begin{cases}
+         \frac{dN_1}{dt} = -B_{12}WN_{1} + A_{21}N_{2} + B_{21}WN_{2} \\
+         \frac{dN_2}{dt} = +B_{12}WN_{1} - A_{21}N_{2} - B_{21}WN_{2}
+         \end{cases}""")
     with st.container(border= True):
         st.header('Steady State')
         res, N = solve_model(st.session_state)
