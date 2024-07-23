@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from modules import wave2rgb
+from modules.colour_converter import wave2rgb
 import matplotlib.colors as colours
 import matplotlib.pyplot as plt
 import numpy as np
