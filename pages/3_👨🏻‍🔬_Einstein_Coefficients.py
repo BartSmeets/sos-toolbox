@@ -53,7 +53,7 @@ with col1:
             st.session_state['ab-N'] = np.exp(h*c/st.session_state['ab-wavelength']/(k*st.session_state['ab-T']))
             
 with col2:
-    st.image('images/A&B.png', width=350)
+    st.image('docs/A&B.png', width=350)
     st.latex(r"""\begin{cases}
          \frac{dN_1}{dt} = -B_{12}WN_{1} + A_{21}N_{2} + B_{21}WN_{2} \\
          \frac{dN_2}{dt} = +B_{12}WN_{1} - A_{21}N_{2} - B_{21}WN_{2}
