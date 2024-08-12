@@ -10,6 +10,10 @@ st.set_page_config(
         page_title="Summer of Science",
         page_icon="☀️")
 st.title("Einstein's A & B Coefficients")
+st.info('''
+        Discover how the A & B coefficients affect the electron populations, N$_1$ and N$_2$. \\
+        Can you make a stable possitive gain?
+        ''')
 
 
 # Constants

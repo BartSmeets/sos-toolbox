@@ -26,6 +26,10 @@ def Planck(wavelength, T):
 
 
 st.title('Black Body Radiation')
+st.info('''
+        Play with Planck's radiation law. \\
+        Assuming the Sun is a black body, how hot is the exterior of the Sun?
+        ''')
 
 # Dashboard
 col1, col2 = st.columns(2)
@@ -46,9 +50,9 @@ with col2:
     with st.container(height=height):
         st.header('Output')
         try:
-            st.write('$\lambda_{max}$ = %.d nm' % wave_max)
+            st.write('λ$_{max}$ = %.d nm' % wave_max)
         except TypeError:
-            st.write('$\lambda_{max}$ = Out of Range')
+            st.write('λ$_{max}$ = Out of Range')
 
 
 fig = plt.figure()

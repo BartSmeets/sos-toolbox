@@ -32,6 +32,10 @@ def callback2():
 
 # Dashboard
 st.title('Colour Converter')
+st.info('''Play with the representation of the light quantum. \\
+        What energy corresponds to a wavelength of 532 nm; and what colour? \\
+        What wavelength corresponds to an energy of 2.80 eV; and what colour?        
+        ''')
 col1, col2 = st.columns(2)
 with col1:
     with st.container(height=350):
