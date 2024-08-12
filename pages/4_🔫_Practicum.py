@@ -5,6 +5,7 @@ st.set_page_config(
         page_title="Summer of Science",
         page_icon="☀️")
 st.title("Practicum")
+st.info('''A little help for solving the equation of the practicum.''')
 
 # Initialise session state
 if 'p-d' not in st.session_state:

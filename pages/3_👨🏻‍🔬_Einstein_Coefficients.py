@@ -10,6 +10,10 @@ st.set_page_config(
         page_title="Summer of Science",
         page_icon="☀️")
 st.title("Einstein's A & B Coefficients")
+st.info('''
+        Discover how the A & B coefficients affect the electron populations, N$_1$ and N$_2$. \\
+        Can you make a stable possitive gain?
+        ''')
 
 
 # Constants
@@ -53,7 +57,7 @@ with col1:
             st.session_state['ab-N'] = np.exp(h*c/st.session_state['ab-wavelength']/(k*st.session_state['ab-T']))
             
 with col2:
-    st.image('images/A&B.png', width=350)
+    st.image('docs/A&B.png', width=350)
     st.latex(r"""\begin{cases}
          \frac{dN_1}{dt} = -B_{12}WN_{1} + A_{21}N_{2} + B_{21}WN_{2} \\
          \frac{dN_2}{dt} = +B_{12}WN_{1} - A_{21}N_{2} - B_{21}WN_{2}
